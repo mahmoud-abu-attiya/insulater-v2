@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .hero{
    height: calc(100vh + 50px);
-   background-image: url("../images/bg.webp");
+   background-image: url("../images/3.webp");
    background-size: cover;
    background-position: center;
    position: relative;
@@ -44,4 +44,9 @@ h1, h2, h3, h4, h5, h6{
    background-image: url("../images/carbon.jpeg");
    background-position: center;
    background-size: cover;
+}
+footer{
+   background-image: url("../images/carbon.jpeg");
+   background-size: cover;
+   background-position: center;
 }
