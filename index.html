@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="canonical" href="https://https://demo.themesberg.com/landwind/" />
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Insulater</title>
+
+   <!-- Meta SEO -->
+   <meta name="title" content="Landwind - Tailwind CSS Landing Page">
+   <meta name="description"
+      content="Get started with a free and open-source landing page built with Tailwind CSS and the Flowbite component library.">
+   <meta name="robots" content="index, follow">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="language" content="English">
+   <meta name="author" content="Themesberg">
+
+   <!-- Social media share -->
+   <meta property="og:title" content="Landwind - Tailwind CSS Landing Page">
+   <meta property="og:site_name" content="Themesberg">
+   <meta property="og:url" content="https://https://demo.themesberg.com/landwind" />
+   <meta property="og:description"
+      content="Get started with a free and open-source landing page for Tailwind CSS built with the Flowbite component library featuring dark mode, hero sections, pricing cards, and more.">
+   <meta property="og:type" content="">
+   <meta property="og:image"
+      content="https://themesberg.s3.us-east-2.amazonaws.com/public/github/landwind/og-image.png">
+   <meta name="twitter:card" content="summary" />
+   <meta name="twitter:site" content="@themesberg" />
+   <meta name="twitter:creator" content="@themesberg" />
+
+   <!-- Favicon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+   <link rel="manifest" href="/site.webmanifest">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
+   <link href="styles/main.css" rel="stylesheet">
+   <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+   <style>
+      .swiper {
+         width: 100%;
+         height: 100%;
+      }
+
+      .swiper-slide {
+         text-align: center;
+         font-size: 18px;
+         /* background: #fff; */
+
+         /* Center slide text vertically */
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: -webkit-flex;
+         display: flex;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         -webkit-justify-content: center;
+         justify-content: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         -webkit-align-items: center;
+         align-items: center;
+      }
+
+      .swiper-slide img {
+         display: block;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   </style>
+
+   <script>
+      tailwind.config = {
+         theme: {
+            extend: {
+               colors: {
+                  // primary: "#1e40af",
+                  primary: "#2563eb",
+                  secondary: "#eab308",
+               }
+            },
+            container: {
+               center: true,
+               padding: "1rem",
+            },
+         },
+      };
+   </script>
+</head>
+
+<body>
+   <header class="fixed top-0 left-0 w-full bg-zinc-900 text-white z-20">
+      <nav class="border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+         <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="https://flowbite.com/" class="flex items-center">
+               <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
+               <!-- <span class="self-center text-xl font-semibold whitespace-nowrap">Flowbite</span> -->
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+               class="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-200"
+               aria-controls="navbar-default" aria-expanded="false">
+               <span class="sr-only">Open main menu</span>
+               <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                     d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                     clip-rule="evenodd"></path>
+               </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+               <ul
+                  class="flex flex-col p-4 mt-4 rounded-lg border border-gray-800 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+                  <li>
+                     <a href="#"
+                        class="block py-2 pr-4 pl-3 text-white bg-primary rounded md:bg-transparent md:text-blue-700 md:p-0"
+                        aria-current="page">Home</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">About</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Services</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Gallery</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">العربية</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <!-- START HERO -->
+      <section class="hero flex justify-center items-center">
+         <div class="overlay"></div>
+         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 z-10  text-white">
+            <span class="text-primary uppercase">modern equipment</span>
+            <h1 class="mb-4 text-5xl font-extrabold md:text-6xl lg:text-8xl">
+               We invest in the world’s potential</h1>
+            <p class="mb-8 text-lg font-normal sm:px-16 xl:px-48">Here at
+               Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and
+               drive
+               economic growth.</p>
+            <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+               <a href="#"
+                  class="grow max-w-[350px] inline-flex justify-center items-center py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-primary hover:bg-primary/75">
+                  Read more <i class="fal fa-arrow-circle-right ml-4"></i>
+               </a>
+               <a href="#"
+                  class="grow max-w-[350px] inline-flex justify-center items-center py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-secondary hover:bg-secondary/75">
+                  Price <i class="fal fa-arrow-circle-right ml-4"></i>
+               </a>
+            </div>
+         </div>
+         <a href="#about" class="down">
+            <i class="fal fa-arrow-circle-down"></i>
+         </a>
+      </section>
+      <!-- END HERO -->
+      <!-- START ABOUT -->
+      <div class="container">
+         <section class="grid grid-cols-5 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:pb-16 items-flex-start" id="about">
+            <div class="mr-auto place-self-centeritems-center col-span-2 self-end">
+               <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-primary md:text-4xl ">
+                  Welcome To ...</h2>
+               <p class="mb-6 font-light lg:mb-8 leading-7">Italian certified brand
+                  with ISO 9001 quality certification, focusing on deep cleaning with water vapor, renovation, interior
+                  repair, exterior painting, polishing, protection and thermal insulation. The company uses its
+                  equipment manufactured with an eco-friendly (eco) system and non-chemical, biodegradable and
+                  eco-friendly products. Services according to technical procedures that have been tested and perfected
+                  for more than 10 years of experience, that is why it was chosen as an exclusive partner for (pattern)
+                  company and to obtain commercial franchise and rights to grant it in Saudi Arabia and the Gulf to
+                  ensure the provision of distinguished service of high quality and standards to suit our ambitions and
+                  customers in the region.</p>
+            </div>
+            <div class="hidden lg:mt-0 lg:flex h-fit align-center col-span-3">
+               <img src="images/carx.webp" alt="mockup" class="w-full">
+            </div>
+            <div class="col-span-12 grid grid-cols-2 lg:grid-cols-4 text-primary text-center">
+               <div class="space-y-4 px-4">
+                  <!-- <img src="images/icon-1.webp" alt="" class="filter-yellow"> -->
+                  <i class="fad fa-stars text-7xl"></i>
+                  <h4 class="text-black">Quality</h4>
+               </div>
+               <div class="space-y-4 px-4">
+                  <!-- <img src="images/icon-2.webp" alt="" class="filter-yellow"> -->
+                  <i class="fad fa-badge-check text-7xl"></i>
+                  <h4 class="text-black">Perfection</h4>
+               </div>
+               <div class="space-y-4 px-4">
+                  <!-- <img src="images/icon-6.webp" alt="" class="filter-yellow"> -->
+                  <i class="fad fa-file-signature text-7xl"></i>
+                  <h4 class="text-black">Warranty</h4>
+               </div>
+               <div class="space-y-4 px-4">
+                  <!-- <img src="images/icon-9.webp" alt="" class="filter-yellow"> -->
+                  <i class="fad fa-badge text-7xl"></i>
+                  <h4 class="text-black">Exclusive</h4>
+               </div>
+            </div>
+         </section>
+      </div>
+      <!-- END ABOUT -->
+      <!-- START SLIDER -->
+      <section class="slider py-8 lg:py-16">
+         <div class="container text-center">
+            <span class="text-primary uppercase">WHAT WE DO</span>
+            <h2
+               class="mb-4 text-4xl max-w-screen-md text-center mx-auto font-extrabold tracking-tight leading-none md:text-6xl text-white">
+               All Dettaglioauto services
+               offer Express with warranty</h2>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide py-16">
+
+                     <div
+                        class="flex flex-col bg-white rounded-lg border shadow-md md:flex-row w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        <img
+                           class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                           src="images/3.webp" alt="">
+                        <div class="flex flex-col p-4 leading-normal text-start">
+                           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                              technology acquisitions 2021</h5>
+                           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                              technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                              <!-- <a href="#"
+                                 class="grow h-fit inline-flex justify-center items-center py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-primary hover:bg-primary/75">
+                                 Read more <i class="fal fa-arrow-circle-right ml-4"></i>
+                              </a> -->
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="swiper-slide py-16">
+
+                     <div
+                        class="flex flex-col bg-white rounded-lg border shadow-md md:flex-row w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        <img
+                           class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                           src="images/3.webp" alt="">
+                        <div class="flex flex-col p-4 leading-normal text-start">
+                           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                              technology acquisitions 2021</h5>
+                           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                              technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                              <!-- <a href="#"
+                                 class="grow h-fit inline-flex justify-center items-center py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-primary hover:bg-primary/75">
+                                 Read more <i class="fal fa-arrow-circle-right ml-4"></i>
+                              </a> -->
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="swiper-slide py-16">
+
+                     <div
+                        class="flex flex-col bg-white rounded-lg border shadow-md md:flex-row w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        <img
+                           class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                           src="images/3.webp" alt="">
+                        <div class="flex flex-col p-4 leading-normal text-start">
+                           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                              technology acquisitions 2021</h5>
+                           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                              technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                              <!-- <a href="#"
+                                 class="grow h-fit inline-flex justify-center items-center py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-primary hover:bg-primary/75">
+                                 Read more <i class="fal fa-arrow-circle-right ml-4"></i>
+                              </a> -->
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="swiper-slide py-16">
+
+                     <div
+                        class="flex flex-col bg-white rounded-lg border shadow-md md:flex-row w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        <img
+                           class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                           src="images/3.webp" alt="">
+                        <div class="flex flex-col p-4 leading-normal text-start">
+                           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                              technology acquisitions 2021</h5>
+                           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                              technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                              <!-- <a href="#"
+                                 class="grow h-fit inline-flex justify-center items-center py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-primary hover:bg-primary/75">
+                                 Read more <i class="fal fa-arrow-circle-right ml-4"></i>
+                              </a> -->
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="swiper-slide py-16">
+
+                     <div
+                        class="flex flex-col bg-white rounded-lg border shadow-md md:flex-row w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        <img
+                           class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                           src="images/3.webp" alt="">
+                        <div class="flex flex-col p-4 leading-normal text-start">
+                           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                              technology acquisitions 2021</h5>
+                           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                              technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                              <!-- <a href="#"
+                                 class="grow h-fit inline-flex justify-center items-center py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-primary hover:bg-primary/75">
+                                 Read more <i class="fal fa-arrow-circle-right ml-4"></i>
+                              </a> -->
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="swiper-slide py-16">
+
+                     <div
+                        class="flex flex-col bg-white rounded-lg border shadow-md md:flex-row w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        <img
+                           class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                           src="images/3.webp" alt="">
+                        <div class="flex flex-col p-4 leading-normal text-start">
+                           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                              technology acquisitions 2021</h5>
+                           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                              technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                              <!-- <a href="#"
+                                 class="grow h-fit inline-flex justify-center items-center py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-primary hover:bg-primary/75">
+                                 Read more <i class="fal fa-arrow-circle-right ml-4"></i>
+                              </a> -->
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="swiper-slide py-16">
+
+                     <div
+                        class="flex flex-col bg-white rounded-lg border shadow-md md:flex-row w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        <img
+                           class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                           src="images/3.webp" alt="">
+                        <div class="flex flex-col p-4 leading-normal text-start">
+                           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                              technology acquisitions 2021</h5>
+                           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                              technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                              <!-- <a href="#"
+                                 class="grow h-fit inline-flex justify-center items-center py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-primary hover:bg-primary/75">
+                                 Read more <i class="fal fa-arrow-circle-right ml-4"></i>
+                              </a> -->
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="swiper-slide py-16">
+
+                     <div
+                        class="flex flex-col bg-white rounded-lg border shadow-md md:flex-row w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        <img
+                           class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                           src="images/3.webp" alt="">
+                        <div class="flex flex-col p-4 leading-normal text-start">
+                           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                              technology acquisitions 2021</h5>
+                           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                              technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                              <!-- <a href="#"
+                                 class="grow h-fit inline-flex justify-center items-center py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-primary hover:bg-primary/75">
+                                 Read more <i class="fal fa-arrow-circle-right ml-4"></i>
+                              </a> -->
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="swiper-slide py-16">
+
+                     <div
+                        class="flex flex-col bg-white rounded-lg border shadow-md md:flex-row w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        <img
+                           class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                           src="images/3.webp" alt="">
+                        <div class="flex flex-col p-4 leading-normal text-start">
+                           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                              technology acquisitions 2021</h5>
+                           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                              technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                              <!-- <a href="#"
+                                 class="grow h-fit inline-flex justify-center items-center py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-primary hover:bg-primary/75">
+                                 Read more <i class="fal fa-arrow-circle-right ml-4"></i>
+                              </a> -->
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-pagination"></div>
+            </div>
+         </div>
+      </section>
+      <!-- END SLIDER -->
+   </main>
+   <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+      var swiper = new Swiper(".mySwiper", {
+         pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+         },
+         navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+         },
+      });
+   </script>
+</body>
+
+</html>
