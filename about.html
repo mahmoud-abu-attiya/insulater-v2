@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="canonical" href="https://https://demo.themesberg.com/landwind/" />
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Insulater</title>
+
+   <!-- Meta SEO -->
+   <meta name="title" content="Landwind - Tailwind CSS Landing Page">
+   <meta name="description"
+      content="Get started with a free and open-source landing page built with Tailwind CSS and the Flowbite component library.">
+   <meta name="robots" content="index, follow">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="language" content="English">
+   <meta name="author" content="Themesberg">
+
+   <!-- Social media share -->
+   <!-- <meta property="og:title" content="Landwind - Tailwind CSS Landing Page">
+   <meta property="og:site_name" content="Themesberg">
+   <meta property="og:url" content="https://https://demo.themesberg.com/landwind" />
+   <meta property="og:description"
+      content="Get started with a free and open-source landing page for Tailwind CSS built with the Flowbite component library featuring dark mode, hero sections, pricing cards, and more.">
+   <meta property="og:type" content="">
+   <meta property="og:image"
+      content="https://themesberg.s3.us-east-2.amazonaws.com/public/github/landwind/og-image.png">
+   <meta name="twitter:card" content="summary" />
+   <meta name="twitter:site" content="@themesberg" />
+   <meta name="twitter:creator" content="@themesberg" /> -->
+
+   <!-- Favicon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+   <link rel="manifest" href="/site.webmanifest">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
+   <link href="styles/main.css" rel="stylesheet">
+   <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+   <script>
+      tailwind.config = {
+         theme: {
+            extend: {
+               colors: {
+                  primary: "#0057a5",
+                  secondary: "#fcbf00",
+               }
+            },
+            container: {
+               center: true,
+               padding: "1rem",
+            },
+         },
+      };
+   </script>
+</head>
+
+<body>
+   <header class="fixed top-0 left-0 w-full bg-zinc-900 text-white z-20">
+      <nav class="border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+         <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="https://flowbite.com/" class="flex items-center">
+               <img src="images/ins1.png" class="h-10 sm:h-14" alt="Flowbite Logo">
+               <!-- <span class="self-center text-xl font-semibold whitespace-nowrap">Flowbite</span> -->
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+               class="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-200"
+               aria-controls="navbar-default" aria-expanded="false">
+               <span class="sr-only">Open main menu</span>
+               <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                     d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                     clip-rule="evenodd"></path>
+               </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+               <ul
+                  class="flex flex-col p-4 mt-4 rounded-lg border border-gray-800 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+                  <li>
+                     <a href="index.html"
+                        class="block py-2 pr-4 pl-3 text-white bg-primary rounded md:bg-transparent md:text-blue-700 md:p-0"
+                        aria-current="page">Home</a>
+                  </li>
+                  <li>
+                     <a href="about.html"
+                        class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">About</a>
+                  </li>
+                  <li>
+                     <a href="services.html"
+                        class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Services</a>
+                  </li>
+                  <li>
+                     <a href="gallery.html"
+                        class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Gallery</a>
+                  </li>
+                  <li>
+                     <a href="contact.html"
+                        class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
+                  </li>
+                  <li>
+                     <a href="ar/index.html"
+                        class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">العربية</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <!-- START HERO -->
+      <section class="hero about flex justify-center items-center">
+         <div class="overlay"></div>
+         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 z-10  text-white">
+            <h1 class="mb-4 text-5xl font-extrabold md:text-6xl lg:text-8xl">
+               About Us
+            </h1>
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+               <li class="inline-flex items-center">
+                  <span class="inline-flex items-center text-sm font-medium">
+                     <i class="fas fa-home mr-2"></i>
+                     Home
+                  </span>
+               </li>
+               <li>
+                  <div class="flex items-center">
+                     <i class="fas fa-chevron-right"></i>
+                     <span class="ml-1 text-sm font-medium md:ml-2 text-secondary">
+                        About Us
+                     </span>
+                  </div>
+               </li>
+            </ol>
+         </div>
+         <span class="down"></span>
+      </section>
+      <!-- END HERO -->
+      <!-- START BLOCK -->
+      <div class="container">
+         <section class="py-8 md:py-16">
+            <div class="gap-8 items-center mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2">
+               <img class="w-full drop-shadow-xl" src="images/pngegg.png" alt="image">
+               <div class="mt-4 md:mt-0">
+                  <h2 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl">
+                     All Dettaglioauto services
+                     offer Express with warranty</h2>
+                  <p class="mb-6 font-light lg:mb-8 leading-7">Italian certified brand
+                     with ISO 9001 quality certification, focusing on deep cleaning with water vapor, renovation,
+                     interior
+                     repair, exterior painting, polishing, protection and thermal insulation. The company uses its
+                     equipment manufactured with an eco-friendly (eco) system and non-chemical, biodegradable and
+                     eco-friendly products. Services according to technical procedures that have been tested and
+                     perfected
+                     for more than 10 years of experience, that is why it was chosen as an exclusive partner for
+                     (pattern)
+                     company and to obtain commercial franchise and rights to grant it in Saudi Arabia and the Gulf to
+                     ensure the provision of distinguished service of high quality and standards to suit our ambitions
+                     and
+                     customers in the region.</p>
+                  </a>
+               </div>
+            </div>
+            <div class="col-span-6 grid grid-cols-1 md:grid-cols-3 gap-4 py-8 md:py-12">
+               <!-- ////////////////////////////////// -->
+               <div
+                  class="flex gap-4 items-center bg-gray-100 p-2 md:p-4 rounded-md justify-between shadow border border-gray-200">
+                  <i class="fad fa-shower text-center text-primary text-5xl drop-shadow-md"></i>
+                  <div class="w-full">
+                     <div class="text-xl md:text-2xl font-bold" id="customerC">
+                        Natural Cleaners
+                     </div>
+                     <h6 class="font-light text-gray-500">
+                        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                     </h6>
+                  </div>
+               </div>
+               <!-- ////////////////////////////////// -->
+               <div
+                  class="flex gap-4 items-center bg-gray-100 p-2 md:p-4 rounded-md justify-between shadow border border-gray-200">
+                  <i class="fad fa-car-wash text-center text-primary text-5xl drop-shadow-md"></i>
+                  <div class="w-full">
+                     <div class="text-xl md:text-2xl font-bold" id="barsC">
+                        Heightened care
+                     </div>
+                     <h6 class="font-light text-gray-500">
+                        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                     </h6>
+                  </div>
+               </div>
+               <!-- ////////////////////////////////// -->
+               <div
+                  class="flex gap-4 items-center bg-gray-100 p-2 md:p-4 rounded-md justify-between shadow border border-gray-200">
+                  <i class="fad fa-sparkles text-center text-primary text-5xl drop-shadow-md"></i>
+                  <div class="w-full">
+                     <div class="text-xl md:text-2xl font-bold" id="restauC">
+                        Aromatization
+                     </div>
+                     <h6 class="font-light text-gray-500">
+                        Vivamus hendrerit, eros non efficitur fermentum, purus lorem.
+                     </h6>
+                  </div>
+               </div>
+               <!-- ////////////////////////////////// -->
+            </div>
+         </section>
+      </div>
+      <!-- END BLOCK -->
+      <!-- START BLOCK -->
+      <section class="bg-carbon py-8 md:py-16 text-center relative overflow-hidden">
+         <div class="container">
+            <h2
+               class="text-white mb-4 text-4xl max-w-screen-md text-center mx-auto font-extrabold tracking-tight leading-none md:text-6xl">
+               Our Services
+            </h2>
+            <p class="mb-8 text-center text-white text-lg font-normal sm:px-16 xl:px-48">Here at
+               Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and
+               drive
+               economic growth.
+            </p>
+            <div class="py-8 mx-auto max-w-screen-xl lg:py-16">
+               <div class="grid md:grid-cols-2 gap-6 xl:gap-8">
+                  <!-- card -->
+
+                  <div
+                     class="grid grid-cols-5 items-center bg-white rounded-lg border text-left shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                     <img
+                        class="object-cover col-span-5 md:col-span-2 h-full rounded-t-lg md:rounded-none md:rounded-l-lg"
+                        src="images/herobg5.jpeg" alt="">
+                     <div class="col-span-5 md:col-span-3 flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                           technology acquisitions 2021</h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                           technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                     </div>
+                  </div>
+
+                  <!-- card -->
+
+                  <div
+                     class="grid grid-cols-5 items-center bg-white rounded-lg border text-left shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                     <img
+                        class="object-cover col-span-5 md:col-span-2 h-full rounded-t-lg md:rounded-none md:rounded-l-lg"
+                        src="images/herobg5.jpeg" alt="">
+                     <div class="col-span-5 md:col-span-3 flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                           technology acquisitions 2021</h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                           technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                     </div>
+                  </div>
+
+                  <!-- card -->
+
+                  <div
+                     class="grid grid-cols-5 items-center bg-white rounded-lg border text-left shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                     <img
+                        class="object-cover col-span-5 md:col-span-2 h-full rounded-t-lg md:rounded-none md:rounded-l-lg"
+                        src="images/herobg5.jpeg" alt="">
+                     <div class="col-span-5 md:col-span-3 flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                           technology acquisitions 2021</h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                           technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                     </div>
+                  </div>
+
+                  <!-- card -->
+
+                  <div
+                     class="grid grid-cols-5 items-center bg-white rounded-lg border text-left shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                     <img
+                        class="object-cover col-span-5 md:col-span-2 h-full rounded-t-lg md:rounded-none md:rounded-l-lg"
+                        src="images/herobg5.jpeg" alt="">
+                     <div class="col-span-5 md:col-span-3 flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                           technology acquisitions 2021</h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                           technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+            <a href="services.html"
+               class="max-w-[350px] w-full mx-auto inline-flex justify-center items-center py-6 spy-3 hmd:adow px-5 text-base font-medium text-center rounded-full bg-secondary  hover:bg-secondary/75">
+               See More <i class="fal fa-arrow-circle-right ml-4"></i>
+            </a>
+         </div>
+         <span class="down bg-secondary"></span>
+      </section>
+      <!-- END BLOCK -->
+      <!-- START BLOCK -->
+      <section class="bg-secondary py-8 lg:py-16">
+         <div class="container">
+            <div class="flex justify-between items-center flex-col md:flex-row">
+               <div class="max-w-[300px] text-2xl md:text-3xl font-bold">Hurry to join the <span
+                     class="text-white">Franchise program</span></div>
+               <a href="#"
+                  class="w-full max-w-[250px] my-12 inline-flex justify-center items-center py-3 md:py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-zinc-900 hover:bg-zinc-900/75">
+                  Read more <i class="fal fa-arrow-circle-right ml-4"></i></a>
+            </div>
+         </div>
+      </section>
+      <!-- END BLOCK -->
+      <!-- START BLOCK -->
+      <div class="container">
+         <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+            <div class="mt-4 md:mt-0">
+               <h2 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-6xl">
+                  Become a partner
+               </h2>
+               <p class="mb-8 text-lg font-normal">
+                  Our products are now between your hands! Your chance is being offered now at Plus Trading. The choice
+                  is
+                  yours, whether you want to distribute the product or have them sold or used in your business.
+               </p>
+               <a href="#"
+                  class="w-full max-w-[250px] my-12 inline-flex justify-center items-center py-3 md:py-6 shadow px-5 text-base font-medium text-center rounded-full bg-secondary hover:bg-secondary/75">
+                  Contact Us <i class="fal fa-arrow-circle-right ml-4"></i>
+               </a>
+            </div>
+            <img class="w-full rounded-full aos-init aos-animate" src="images/handshake.png" alt="dashboard image"
+               data-aos="zoom-in">
+         </div>
+      </div>
+      <!-- END BLOCK -->
+   </main>
+   <!-- START FOOTER -->
+   <footer class="pt-8 lg:pt-16 text-center text-white bg-carbon">
+      <div class="container space-y-12">
+         <div class="head text-center">
+            <img src="images/ins1.png" class="mx-auto h-12 sm:h-16" alt="Flowbite Logo">
+            <h6 class="font-light text-white">
+               Vivamus hendrerit, eros non efficitur fermentum, purus lorem.
+            </h6>
+         </div>
+         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+               <i class="fas fa-user-clock text-center text-primary text-5xl drop-shadow-md"></i>
+               <h5 class="text-xl font-bold">Work hours</h5>
+               <p class="font-light text-white">
+                  <span class="text-primary">Sa-Th:</span> 09:00 - 21:00 <br>
+                  <span class="text-primary">Fri:</span> 16:00 - 21:00
+               </p>
+            </div>
+            <div>
+               <i class="fas fa-envelope text-center text-primary text-5xl drop-shadow-md"></i>
+               <h5 class="text-xl font-bold">E-mail:</h5>
+               <a href="mailto:info@insulator-qatar.com" class="font-light text-white">
+                  info@insulator-qatar.com
+               </a>
+            </div>
+            <div>
+               <i class="fas fa-map-marker-alt text-center text-primary text-5xl drop-shadow-md"></i>
+               <h5 class="text-xl font-bold">Company Location</h5>
+               <p class="font-light text-white">
+                  قطر - طريق سلوي
+               </p>
+            </div>
+         </div>
+         <div class="flex mt-4 space-x-6 justify-center sm:mt-0">
+            <a href="https://www.facebook.com/Insulator.qa" class="text-primary text-4xl drop-shadow">
+               <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/Insulator.qa" class="text-primary text-4xl drop-shadow">
+               <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.snapchat.com/add/insulator.qa" class="text-primary text-4xl drop-shadow">
+               <i class="fab fa-snapchat"></i>
+            </a>
+         </div>
+      </div>
+      <div class="p-8 bg-zinc-900/75 mt-12">All Copy Rights Reserved to <span class="text-primary">Insulater©</span>
+         2022</div>
+   </footer>
+   <!-- END FOOTER -->
+   <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+</body>
+
+</html>
