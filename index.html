@@ -45,6 +45,7 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
    <!-- Link Swiper's CSS -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <style>
       .swiper {
          width: 100%;
@@ -84,7 +85,6 @@
          theme: {
             extend: {
                colors: {
-                  // primary: "#1e40af",
                   primary: "#0057a5",
                   secondary: "#fcbf00",
                }
@@ -159,20 +159,24 @@
          <div class="layout layout-four"></div>
          <div class="layout layout-five layout-active"></div>
          <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 z-10  text-white">
-            <span class="text-primary uppercase">modern equipment</span>
-            <h1 class="mb-4 text-5xl font-extrabold md:text-6xl lg:text-8xl">
-               We invest in the world’s potential</h1>
-            <p class="mb-8 text-lg font-normal sm:px-16 xl:px-48">Here at
-               Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and
-               drive
-               economic growth.</p>
-            <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+            <div class="text-primary uppercase" data-aos="fade-down">modern equipment</div>
+            <div data-aos="zoon-in">
+               <h1 class="mb-4 text-5xl font-extrabold md:text-6xl lg:text-8xl">
+                  We invest in the world’s potential</h1>
+               <p class="mb-8 text-lg font-normal sm:px-16 xl:px-48">Here at
+                  Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and
+                  drive
+                  economic growth.
+               </p>
+            </div>
+            <div data-aos="fade-up"
+               class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                <a href="#"
-                  class="grow md:max-w-[350px] inline-flex justify-center items-center py-3 md:py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-primary hover:bg-primary/75">
+                  class="grow md:max-w-[350px] inline-flex justify-center items-center py-3 md:py-6 shadow px-5 text-xl font-bold text-center text-white rounded-full bg-primary hover:bg-primary/75">
                   Read more <i class="fal fa-arrow-circle-right ml-4"></i>
                </a>
                <a href="#"
-                  class="grow md:max-w-[350px] inline-flex justify-center items-center py-3 md:py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-secondary hover:bg-secondary/75">
+                  class="grow md:max-w-[350px] inline-flex justify-center items-center py-3 md:py-6 shadow px-5 text-xl font-bold text-center text-black rounded-full bg-secondary hover:bg-secondary/75">
                   Price <i class="fal fa-arrow-circle-right ml-4"></i>
                </a>
             </div>
@@ -184,12 +188,12 @@
       <!-- END HERO -->
       <!-- START ABOUT -->
       <div class="container">
-         <section class="grid grid-cols-5 pt-12 pb-8 mx-auto lg:pt-0 lg:gap-8 xl:gap-0 lg:pb-16 items-flex-start"
-            id="about">
-            <div class="mr-auto place-self-centeritems-center col-span-5 py-8 md:col-span-2 self-end">
-               <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-primary md:text-4xl ">
+         <section class="grid grid-cols-5 pt-12 lg:pb-16" id="about">
+            <div class="mr-auto place-self-centeritems-center col-span-5 py-8 lg:col-span-2 self-end">
+               <h2 data-aos="fade-up"
+                  class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-primary md:text-4xl ">
                   Welcome To ...</h2>
-               <p class="mb-6 font-light lg:mb-8 leading-7">Italian certified brand
+               <p data-aos="fade-up" class="mb-6 font-light lg:mb-8 leading-7">Italian certified brand
                   with ISO 9001 quality certification, focusing on deep cleaning with water vapor, renovation, interior
                   repair, exterior painting, polishing, protection and thermal insulation. The company uses its
                   equipment manufactured with an eco-friendly (eco) system and non-chemical, biodegradable and
@@ -199,27 +203,23 @@
                   ensure the provision of distinguished service of high quality and standards to suit our ambitions and
                   customers in the region.</p>
             </div>
-            <div class="hidden lg:mt-0 lg:flex h-fit align-center col-span-3">
+            <div data-aos="fade-up" class="hidden lg:mt-0 lg:flex h-fit align-center lg:col-span-3">
                <img src="images/carx.webp" alt="mockup" class="w-full">
             </div>
             <div class="col-span-12 grid grid-cols-2 gap-8 lg:grid-cols-4 text-primary text-center">
-               <div class="space-y-4 px-4">
-                  <!-- <img src="images/icon-1.webp" alt="" class="filter-yellow"> -->
+               <div class="space-y-4 px-4" data-aos="fade-up" data-aos-delay="100">
                   <i class="fad fa-stars text-5xl md:text-7xl"></i>
                   <h4 class="text-black">Quality</h4>
                </div>
-               <div class="space-y-4 px-4">
-                  <!-- <img src="images/icon-2.webp" alt="" class="filter-yellow"> -->
+               <div class="space-y-4 px-4" data-aos="fade-up" data-aos-delay="150">
                   <i class="fad fa-badge-check text-5xl md:text-7xl"></i>
                   <h4 class="text-black">Perfection</h4>
                </div>
-               <div class="space-y-4 px-4">
-                  <!-- <img src="images/icon-6.webp" alt="" class="filter-yellow"> -->
+               <div class="space-y-4 px-4" data-aos="fade-up" data-aos-delay="250">
                   <i class="fad fa-file-signature text-5xl md:text-7xl"></i>
                   <h4 class="text-black">Warranty</h4>
                </div>
-               <div class="space-y-4 px-4">
-                  <!-- <img src="images/icon-9.webp" alt="" class="filter-yellow"> -->
+               <div class="space-y-4 px-4" data-aos="fade-up" data-aos-delay="300">
                   <i class="fad fa-badge text-5xl md:text-7xl"></i>
                   <h4 class="text-black">Exclusive</h4>
                </div>
@@ -233,11 +233,12 @@
             <i class="fal fa-arrow-circle-down"></i>
          </a>
          <div class="container text-center">
-            <span class="text-primary uppercase">WHAT WE DO</span>
-            <h2
+            <div class="text-secondary uppercase" data-aos="fade-up">WHAT WE DO</div>
+            <h2 data-aos="fade-up"
                class="mb-4 text-4xl max-w-screen-md text-center mx-auto font-extrabold tracking-tight leading-none md:text-6xl text-white">
                All Dettaglioauto services
-               offer Express with warranty</h2>
+               offer Express with warranty
+            </h2>
             <!-- Swiper -->
             <div class="swiper mySwiper">
                <div class="swiper-wrapper">
@@ -423,13 +424,29 @@
       <!-- START PRICE -->
       <div class="container">
          <section class="text-center py-8 lg:py-16" id="price">
-            <span class="text-primary uppercase">price</span>
-            <h2
+            <div data-aos="fade-up" class="text-primary uppercase">price</div>
+            <h2 data-aos="fade-up"
                class="mb-4 text-4xl max-w-screen-md text-center mx-auto font-extrabold tracking-tight leading-none md:text-6xl">
                Choose Your Plan</h2>
-            <div class="py-8 mx-auto max-w-screen-xl lg:py-16">
+            <div class="cars w-fit flex mx-auto flex-wrap gap-4">
+               <div data-aos="fade-up" data-aos-delay="100"
+                  class="car carone cursor-pointer rounded-lg p-5 border border-gray-100 shadow hover:scale-105 hover:shadow-lg transition">
+                  <img src="images/car-sm.webp" alt="" class="h-14 md:h-20">
+                  <span>Sedan</span>
+               </div>
+               <div data-aos="fade-up" data-aos-delay="150"
+                  class="car cartwo cursor-pointer rounded-lg p-5 border border-gray-100 shadow hover:scale-105 hover:shadow-lg transition">
+                  <img src="images/car-md.webp" alt="" class="h-14 md:h-20">
+                  <span>Medium</span>
+               </div>
+               <div data-aos="fade-up" data-aos-delay="200"
+                  class="car carthree cursor-pointer rounded-lg p-5 border border-gray-100 shadow hover:scale-105 hover:shadow-lg transition">
+                  <img src="images/car-lg.webp" alt="" class="h-14 md:h-20">
+                  <span>Large</span>
+               </div>
+            </div>
+            <!-- <div class="py-8 mx-auto max-w-screen-xl lg:py-16">
                <div class="space-y-8 lg:grid lg:grid-cols-4 sm:gap-6 xl:gap-8 lg:space-y-0">
-                  <!-- Pricing Card -->
                   <div
                      class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow-xl hover:shadow-2xl transition">
                      <span class="text-primary uppercase">WHAT WE DO</span>
@@ -439,7 +456,6 @@
                            <span class="absolute top-0 text-xl">SR</span>
                         </span>
                      </div>
-                     <!-- List -->
                      <ul role="list" class="mb-8 space-y-4 text-left">
                         <li class="flex items-center space-x-3">
                            <i class="far fa-check text-green-500"></i>
@@ -466,7 +482,6 @@
                         class="shadow-sm text-white bg-primary hover:bg-primary/75 font-medium rounded-full mt-auto text-sm px-5 py-2.5 text-center">Get
                         started</a>
                   </div>
-                  <!-- Pricing Card -->
                   <div
                      class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow-xl hover:shadow-2xl transition">
                      <span class="text-primary uppercase">WHAT WE DO</span>
@@ -475,7 +490,6 @@
                            <span class="absolute top-0 text-xl">SR</span>
                         </span>
                      </div>
-                     <!-- List -->
                      <ul role="list" class="mb-8 space-y-4 text-left">
                         <li class="flex items-center space-x-3">
                            <i class="far fa-check text-green-500"></i>
@@ -502,7 +516,6 @@
                         class="shadow-sm text-white bg-primary hover:bg-primary/75 font-medium rounded-full mt-auto text-sm px-5 py-2.5 text-center">Get
                         started</a>
                   </div>
-                  <!-- Pricing Card -->
                   <div
                      class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow-xl hover:shadow-2xl transition">
                      <span class="text-primary uppercase">WHAT WE DO</span>
@@ -511,7 +524,6 @@
                            <span class="absolute top-0 text-xl">SR</span>
                         </span>
                      </div>
-                     <!-- List -->
                      <ul role="list" class="mb-8 space-y-4 text-left">
                         <li class="flex items-center space-x-3">
                            <i class="far fa-check text-green-500"></i>
@@ -538,7 +550,6 @@
                         class="shadow-sm text-white bg-primary hover:bg-primary/75 font-medium rounded-full mt-auto text-sm px-5 py-2.5 text-center">Get
                         started</a>
                   </div>
-                  <!-- Pricing Card -->
                   <div
                      class="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-zinc-900 rounded-lg shadow-xl hover:shadow-2xl transition">
                      <span class="text-primary uppercase">WHAT WE DO</span>
@@ -547,7 +558,6 @@
                            <span class="absolute top-0 text-xl">SR</span>
                         </span>
                      </div>
-                     <!-- List -->
                      <ul role="list" class="mb-8 space-y-4 text-left">
                         <li class="flex items-center space-x-3">
                            <i class="far fa-check text-green-500"></i>
@@ -575,6 +585,439 @@
                         started</a>
                   </div>
                </div>
+            </div> -->
+            <div class="swiper mySwiper-two">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="py-8 mx-auto max-w-screen-xl lg:py-16">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 sm:gap-6 xl:gap-8">
+                           <div data-aos="fade-up" data-aos-delay="100"
+                              class="flex flex-col p-6 mx-auto max-w-lg text-center h-full text-gray-900 bg-white rounded-lg border lgrder-gray-100 shadow-xl hover:shadow-2xl transition">
+                              <span class="text-primary uppercase">WHAT WE DO</span>
+                              <div class="flex justify-center items-baseline my-8">
+                                 <span class="mr-2 text-5xl font-extrabold relative">
+                                    $29
+                                    <span class="absolute top-0 text-xl">SR</span>
+                                 </span>
+                              </div>
+                              <ul role="list" class="mb-8 space-y-4 text-left">
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Individual configuration</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>No setup, or hidden fees</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Team size: <span class="font-semibold">1 developer</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Premium support: <span class="font-semibold">6 months</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Free updates: <span class="font-semibold">6 months</span></span>
+                                 </li>
+                              </ul>
+                              <a href="#"
+                                 class="shadow-sm text-white bg-primary hover:bg-primary/75 font-medium rounded-full mt-auto text-sm px-5 py-2.5 text-center">Get
+                                 started</a>
+                           </div>
+                           <div data-aos="fade-up" data-aos-delay="150"
+                              class="flex flex-col p-6 mx-auto max-w-lg text-center h-full text-gray-900 bg-white rounded-lg border lgrder-gray-100 shadow-xl hover:shadow-2xl transition">
+                              <span class="text-primary uppercase">WHAT WE DO</span>
+                              <div class="flex justify-center items-baseline my-8">
+                                 <span class="mr-2 text-5xl font-extrabold relative">29
+                                    <span class="absolute top-0 text-xl">SR</span>
+                                 </span>
+                              </div>
+                              <ul role="list" class="mb-8 space-y-4 text-left">
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Individual configuration</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>No setup, or hidden fees</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Team size: <span class="font-semibold">1 developer</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Premium support: <span class="font-semibold">6 months</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Free updates: <span class="font-semibold">6 months</span></span>
+                                 </li>
+                              </ul>
+                              <a href="#"
+                                 class="shadow-sm text-white bg-primary hover:bg-primary/75 font-medium rounded-full mt-auto text-sm px-5 py-2.5 text-center">Get
+                                 started</a>
+                           </div>
+                           <div data-aos="fade-up" data-aos-delay="200"
+                              class="flex flex-col p-6 mx-auto max-w-lg text-center h-full text-gray-900 bg-white rounded-lg border lgrder-gray-100 shadow-xl hover:shadow-2xl transition">
+                              <span class="text-primary uppercase">WHAT WE DO</span>
+                              <div class="flex justify-center items-baseline my-8">
+                                 <span class="mr-2 text-5xl font-extrabold relative">99
+                                    <span class="absolute top-0 text-xl">SR</span>
+                                 </span>
+                              </div>
+                              <ul role="list" class="mb-8 space-y-4 text-left">
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Individual configuration</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>No setup, or hidden fees</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Team size: <span class="font-semibold">10 developers</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Premium support: <span class="font-semibold">24 months</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Free updates: <span class="font-semibold">24 months</span></span>
+                                 </li>
+                              </ul>
+                              <a href="#"
+                                 class="shadow-sm text-white bg-primary hover:bg-primary/75 font-medium rounded-full mt-auto text-sm px-5 py-2.5 text-center">Get
+                                 started</a>
+                           </div>
+                           <div data-aos="fade-up" data-aos-delay="250"
+                              class="flex flex-col p-6 mx-auto max-w-lg text-center h-full text-white bg-zinc-900 rounded-lg shadow-lg hover:shadow-2xl transition">
+                              <span class="text-primary uppercase">WHAT WE DO</span>
+                              <div class="flex justify-center items-baseline my-8">
+                                 <span class="mr-2 text-5xl font-extrabold relative">499
+                                    <span class="absolute top-0 text-xl">SR</span>
+                                 </span>
+                              </div>
+                              <ul role="list" class="mb-8 space-y-4 text-left">
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Individual configuration</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>No setup, or hidden fees</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Team size: <span class="font-semibold">100+ developers</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Premium support: <span class="font-semibold">36 months</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Free updates: <span class="font-semibold">36 months</span></span>
+                                 </li>
+                              </ul>
+                              <a href="#"
+                                 class="shadow-sm text-white bg-primary hover:bg-primary/75 font-medium rounded-full mt-auto text-sm px-5 py-2.5 text-center">Get
+                                 started</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="py-8 mx-auto max-w-screen-xl lg:py-16">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 sm:gap-6 xl:gap-8">
+                           <div data-aos="fade-up" data-aos-delay="100"
+                              class="flex flex-col p-6 mx-auto max-w-lg text-center h-full text-gray-900 bg-white rounded-lg border lgrder-gray-100 shadow-xl hover:shadow-2xl transition">
+                              <span class="text-primary uppercase">WHAT WE DO</span>
+                              <div class="flex justify-center items-baseline my-8">
+                                 <span class="mr-2 text-5xl font-extrabold relative">
+                                    $29
+                                    <span class="absolute top-0 text-xl">SR</span>
+                                 </span>
+                              </div>
+                              <ul role="list" class="mb-8 space-y-4 text-left">
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Individual configuration</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>No setup, or hidden fees</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Team size: <span class="font-semibold">1 developer</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Premium support: <span class="font-semibold">6 months</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Free updates: <span class="font-semibold">6 months</span></span>
+                                 </li>
+                              </ul>
+                              <a href="#"
+                                 class="shadow-sm text-white bg-primary hover:bg-primary/75 font-medium rounded-full mt-auto text-sm px-5 py-2.5 text-center">Get
+                                 started</a>
+                           </div>
+                           <div data-aos="fade-up" data-aos-delay="150"
+                              class="flex flex-col p-6 mx-auto max-w-lg text-center h-full text-gray-900 bg-white rounded-lg border lgrder-gray-100 shadow-xl hover:shadow-2xl transition">
+                              <span class="text-primary uppercase">WHAT WE DO</span>
+                              <div class="flex justify-center items-baseline my-8">
+                                 <span class="mr-2 text-5xl font-extrabold relative">29
+                                    <span class="absolute top-0 text-xl">SR</span>
+                                 </span>
+                              </div>
+                              <ul role="list" class="mb-8 space-y-4 text-left">
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Individual configuration</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>No setup, or hidden fees</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Team size: <span class="font-semibold">1 developer</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Premium support: <span class="font-semibold">6 months</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Free updates: <span class="font-semibold">6 months</span></span>
+                                 </li>
+                              </ul>
+                              <a href="#"
+                                 class="shadow-sm text-white bg-primary hover:bg-primary/75 font-medium rounded-full mt-auto text-sm px-5 py-2.5 text-center">Get
+                                 started</a>
+                           </div>
+                           <div data-aos="fade-up" data-aos-delay="200"
+                              class="flex flex-col p-6 mx-auto max-w-lg text-center h-full text-gray-900 bg-white rounded-lg border lgrder-gray-100 shadow-xl hover:shadow-2xl transition">
+                              <span class="text-primary uppercase">WHAT WE DO</span>
+                              <div class="flex justify-center items-baseline my-8">
+                                 <span class="mr-2 text-5xl font-extrabold relative">99
+                                    <span class="absolute top-0 text-xl">SR</span>
+                                 </span>
+                              </div>
+                              <ul role="list" class="mb-8 space-y-4 text-left">
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Individual configuration</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>No setup, or hidden fees</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Team size: <span class="font-semibold">10 developers</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Premium support: <span class="font-semibold">24 months</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Free updates: <span class="font-semibold">24 months</span></span>
+                                 </li>
+                              </ul>
+                              <a href="#"
+                                 class="shadow-sm text-white bg-primary hover:bg-primary/75 font-medium rounded-full mt-auto text-sm px-5 py-2.5 text-center">Get
+                                 started</a>
+                           </div>
+                           <div data-aos="fade-up" data-aos-delay="250"
+                              class="flex flex-col p-6 mx-auto max-w-lg text-center h-full text-white bg-zinc-900 rounded-lg shadow-lg hover:shadow-2xl transition">
+                              <span class="text-primary uppercase">WHAT WE DO</span>
+                              <div class="flex justify-center items-baseline my-8">
+                                 <span class="mr-2 text-5xl font-extrabold relative">499
+                                    <span class="absolute top-0 text-xl">SR</span>
+                                 </span>
+                              </div>
+                              <ul role="list" class="mb-8 space-y-4 text-left">
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Individual configuration</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>No setup, or hidden fees</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Team size: <span class="font-semibold">100+ developers</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Premium support: <span class="font-semibold">36 months</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Free updates: <span class="font-semibold">36 months</span></span>
+                                 </li>
+                              </ul>
+                              <a href="#"
+                                 class="shadow-sm text-white bg-primary hover:bg-primary/75 font-medium rounded-full mt-auto text-sm px-5 py-2.5 text-center">Get
+                                 started</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="py-8 mx-auto max-w-screen-xl lg:py-16">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 sm:gap-6 xl:gap-8">
+                           <div data-aos="fade-up" data-aos-delay="100"
+                              class="flex flex-col p-6 mx-auto max-w-lg text-center h-full text-gray-900 bg-white rounded-lg border lgrder-gray-100 shadow-xl hover:shadow-2xl transition">
+                              <span class="text-primary uppercase">WHAT WE DO</span>
+                              <div class="flex justify-center items-baseline my-8">
+                                 <span class="mr-2 text-5xl font-extrabold relative">
+                                    $29
+                                    <span class="absolute top-0 text-xl">SR</span>
+                                 </span>
+                              </div>
+                              <ul role="list" class="mb-8 space-y-4 text-left">
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Individual configuration</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>No setup, or hidden fees</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Team size: <span class="font-semibold">1 developer</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Premium support: <span class="font-semibold">6 months</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Free updates: <span class="font-semibold">6 months</span></span>
+                                 </li>
+                              </ul>
+                              <a href="#"
+                                 class="shadow-sm text-white bg-primary hover:bg-primary/75 font-medium rounded-full mt-auto text-sm px-5 py-2.5 text-center">Get
+                                 started</a>
+                           </div>
+                           <div data-aos="fade-up" data-aos-delay="150"
+                              class="flex flex-col p-6 mx-auto max-w-lg text-center h-full text-gray-900 bg-white rounded-lg border lgrder-gray-100 shadow-xl hover:shadow-2xl transition">
+                              <span class="text-primary uppercase">WHAT WE DO</span>
+                              <div class="flex justify-center items-baseline my-8">
+                                 <span class="mr-2 text-5xl font-extrabold relative">29
+                                    <span class="absolute top-0 text-xl">SR</span>
+                                 </span>
+                              </div>
+                              <ul role="list" class="mb-8 space-y-4 text-left">
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Individual configuration</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>No setup, or hidden fees</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Team size: <span class="font-semibold">1 developer</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Premium support: <span class="font-semibold">6 months</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Free updates: <span class="font-semibold">6 months</span></span>
+                                 </li>
+                              </ul>
+                              <a href="#"
+                                 class="shadow-sm text-white bg-primary hover:bg-primary/75 font-medium rounded-full mt-auto text-sm px-5 py-2.5 text-center">Get
+                                 started</a>
+                           </div>
+                           <div data-aos="fade-up" data-aos-delay="200"
+                              class="flex flex-col p-6 mx-auto max-w-lg text-center h-full text-gray-900 bg-white rounded-lg border lgrder-gray-100 shadow-xl hover:shadow-2xl transition">
+                              <span class="text-primary uppercase">WHAT WE DO</span>
+                              <div class="flex justify-center items-baseline my-8">
+                                 <span class="mr-2 text-5xl font-extrabold relative">99
+                                    <span class="absolute top-0 text-xl">SR</span>
+                                 </span>
+                              </div>
+                              <ul role="list" class="mb-8 space-y-4 text-left">
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Individual configuration</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>No setup, or hidden fees</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Team size: <span class="font-semibold">10 developers</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Premium support: <span class="font-semibold">24 months</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Free updates: <span class="font-semibold">24 months</span></span>
+                                 </li>
+                              </ul>
+                              <a href="#"
+                                 class="shadow-sm text-white bg-primary hover:bg-primary/75 font-medium rounded-full mt-auto text-sm px-5 py-2.5 text-center">Get
+                                 started</a>
+                           </div>
+                           <div data-aos="fade-up" data-aos-delay="250"
+                              class="flex flex-col p-6 mx-auto max-w-lg text-center h-full text-white bg-zinc-900 rounded-lg shadow-lg hover:shadow-2xl transition">
+                              <span class="text-primary uppercase">WHAT WE DO</span>
+                              <div class="flex justify-center items-baseline my-8">
+                                 <span class="mr-2 text-5xl font-extrabold relative">499
+                                    <span class="absolute top-0 text-xl">SR</span>
+                                 </span>
+                              </div>
+                              <ul role="list" class="mb-8 space-y-4 text-left">
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Individual configuration</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>No setup, or hidden fees</span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Team size: <span class="font-semibold">100+ developers</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Premium support: <span class="font-semibold">36 months</span></span>
+                                 </li>
+                                 <li class="flex items-center space-x-3">
+                                    <i class="far fa-check text-green-500"></i>
+                                    <span>Free updates: <span class="font-semibold">36 months</span></span>
+                                 </li>
+                              </ul>
+                              <a href="#"
+                                 class="shadow-sm text-white bg-primary hover:bg-primary/75 font-medium rounded-full mt-auto text-sm px-5 py-2.5 text-center">Get
+                                 started</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </section>
       </div>
@@ -584,21 +1027,59 @@
          <div class="container">
             <div class="grid grid-cols-6 gap-6 items-center">
                <div class="col-span-6 md:col-span-2">
-                  <span class="text-primary uppercase">DRY CLEANING</span>
-                  <h2 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-6xl">
+                  <div data-aos="fade-up" class="text-secondary uppercase">DRY CLEANING</div>
+                  <h2 data-aos="fade-up" class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-6xl">
                      Trunk and pile rug car cleaning service</h2>
-                  <a href="#"
-                     class="w-full my-12 inline-flex justify-center items-center py-3 md:py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-primary hover:bg-primary/75">
+                  <a href="#" data-aos="fade-up"
+                     class="w-full my-12 inline-flex justify-center items-center py-3 md:py-6 shadow px-5 text-xl text-black text-center rounded-full bg-secondary hover:bg-secondary/75">
                      Read more <i class="fal fa-arrow-circle-right ml-4"></i>
                   </a>
                </div>
-               <div class="col-span-6 md:col-span-4">
+               <div data-aos="fade-left" class="col-span-6 md:col-span-4">
                   <!-- cocoen -->
-                  <div class="rounded-xl shadow overflow-hidden">
+                  <!-- <div class="rounded-xl shadow overflow-hidden">
                      <div class="cocoen">
                         <img src="images/before.webp" alt="" class="max-w-fit" loading="lazy" />
                         <img src="images/after.webp" alt="" loading="lazy" />
                      </div>
+                  </div> -->
+                  <div class="swiper mySwiper-three">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="rounded-xl shadow overflow-hidden">
+                              <div class="cocoen">
+                                 <img src="images/before.webp" alt="" class="max-w-fit" loading="lazy" />
+                                 <img src="images/after.webp" alt="" loading="lazy" />
+                              </div>
+                           </div> 
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="rounded-xl shadow overflow-hidden">
+                     <div class="cocoen">
+                        <img src="images/Before_02.webp" alt="" class="max-w-fit" loading="lazy" />
+                        <img src="images/After_02.webp" alt="" loading="lazy" />
+                     </div>
+                  </div> 
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="rounded-xl shadow overflow-hidden">
+                     <div class="cocoen">
+                        <img src="images/Before_03.webp" alt="" class="max-w-fit" loading="lazy" />
+                        <img src="images/After_03.webp" alt="" loading="lazy" />
+                     </div>
+                  </div> 
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="rounded-xl shadow overflow-hidden">
+                     <div class="cocoen">
+                        <img src="images/Before_04.webp" alt="" class="max-w-fit" loading="lazy" />
+                        <img src="images/After_04.webp" alt="" loading="lazy" />
+                     </div>
+                  </div> 
+                        </div>
+                     </div>
+                     <div class="swiper-button-next"></div>
+                     <div class="swiper-button-prev"></div>
                   </div>
                   <script src="lib/cocoen.js"></script>
                   <script>
@@ -607,10 +1088,9 @@
                </div>
                <div class="col-span-6 grid grid-cols-1 md:grid-cols-3 gap-4 py-8 md:py-12">
                   <!-- ////////////////////////////////// -->
-                  <div class="shadow-sm flex gap-4 items-center bg-gray p-2 md:p-4 rounded-md justify-between">
-                     <i class="fad fa-shower text-center text-primary text-5xl drop-shadow-md"></i>
-                     <!-- <i class="fad fa-hand-sparkles"></i> -->
-                     <!-- <i class="fad fa-shower"></i> -->
+                  <div data-aos="zoom-in-right"
+                     class="shadow-sm flex gap-4 items-center bg-gray p-2 md:p-4 rounded-md justify-between">
+                     <i class="fad fa-shower text-center text-secondary text-5xl drop-shadow-md"></i>
                      <div class="w-full">
                         <div class="text-xl md:text-2xl font-bold" id="customerC">
                            Natural Cleaners
@@ -621,10 +1101,9 @@
                      </div>
                   </div>
                   <!-- ////////////////////////////////// -->
-                  <!-- ////////////////////////////////// -->
-                  <div class="shadow-sm flex gap-4 items-center bg-gray p-2 md:p-4 rounded-md justify-between">
-                     <i class="fad fa-car-wash text-center text-primary text-5xl drop-shadow-md"></i>
-                     <!-- <i class="fad fa-car-wash"></i> -->
+                  <div data-aos="zoom-in-up"
+                     class="shadow-sm flex gap-4 items-center bg-gray p-2 md:p-4 rounded-md justify-between">
+                     <i class="fad fa-car-wash text-center text-secondary text-5xl drop-shadow-md"></i>
                      <div class="w-full">
                         <div class="text-xl md:text-2xl font-bold" id="barsC">
                            Heightened care
@@ -635,10 +1114,9 @@
                      </div>
                   </div>
                   <!-- ////////////////////////////////// -->
-                  <!-- ////////////////////////////////// -->
-                  <div class="shadow-sm flex gap-4 items-center bg-gray p-2 md:p-4 rounded-md justify-between">
-                     <i class="fad fa-sparkles text-center text-primary text-5xl drop-shadow-md"></i>
-                     <!-- <i class="fad fa-sparkles"></i> -->
+                  <div data-aos="zoom-in-left"
+                     class="shadow-sm flex gap-4 items-center bg-gray p-2 md:p-4 rounded-md justify-between">
+                     <i class="fad fa-sparkles text-center text-secondary text-5xl drop-shadow-md"></i>
                      <div class="w-full">
                         <div class="text-xl md:text-2xl font-bold" id="restauC">
                            Aromatization
@@ -659,11 +1137,12 @@
       <section class="bg-primary py-8 lg:py-16">
          <div class="container">
             <div class="flex justify-between items-center flex-col md:flex-row">
-               <div class="max-w-[300px] text-2xl md:text-3xl font-bold">Hurry to join the <span
+               <div class="max-w-[300px] text-2xl md:text-3xl font-bold text-secondary">Hurry to join the <span
                      class="text-white">Franchise program</span></div>
                <a href="#"
-                  class="w-full max-w-[250px] my-12 inline-flex justify-center items-center py-3 md:py-6 shadow px-5 text-base font-medium text-center text-white rounded-full bg-zinc-900 hover:bg-zinc-900/75">
-                  Read more <i class="fal fa-arrow-circle-right ml-4"></i></a>
+                  class="w-full max-w-[250px] my-12 inline-flex justify-center items-center py-3 md:py-6 shadow px-5 text-xl text-center text-primary rounded-full bg-secondary hover:bg-secondary/75">
+                  Join Now <i class="fal fa-arrow-circle-right ml-4"></i>
+               </a>
             </div>
          </div>
       </section>
@@ -747,57 +1226,61 @@
    <footer class="pt-8 lg:pt-16 text-center text-white bg-carbon">
       <div class="container space-y-12">
          <div class="head text-center">
-            <img src="images/ins1.png" class="mx-auto h-12 sm:h-16" alt="Flowbite Logo">
+            <img src="images/ins2.png" class="mx-auto sm:h-16" alt="Flowbite Logo">
             <h6 class="font-light text-white">
                Vivamus hendrerit, eros non efficitur fermentum, purus lorem.
             </h6>
          </div>
          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-               <i class="fas fa-user-clock text-center text-primary text-5xl drop-shadow-md"></i>
+               <i class="fas fa-user-clock text-center text-secondary text-5xl drop-shadow-md"></i>
                <h5 class="text-xl font-bold">Work hours</h5>
                <p class="font-light text-white">
-                  <span class="text-primary">Sa-Th:</span> 09:00 - 21:00 <br>
-                  <span class="text-primary">Fri:</span> 16:00 - 21:00
+                  <span class="text-secondary">Sa-Th:</span> 09:00 - 21:00 <br>
+                  <span class="text-secondary">Fri:</span> 16:00 - 21:00
                </p>
             </div>
             <div>
-               <i class="fas fa-envelope text-center text-primary text-5xl drop-shadow-md"></i>
+               <i class="fas fa-envelope text-center text-secondary text-5xl drop-shadow-md"></i>
                <h5 class="text-xl font-bold">E-mail:</h5>
                <a href="mailto:info@insulator-qatar.com" class="font-light text-white">
                   info@insulator-qatar.com
                </a>
             </div>
             <div>
-               <i class="fas fa-map-marker-alt text-center text-primary text-5xl drop-shadow-md"></i>
+               <i class="fas fa-map-marker-alt text-center text-secondary text-5xl drop-shadow-md"></i>
                <h5 class="text-xl font-bold">Company Location</h5>
                <p class="font-light text-white">
-                  قطر - طريق سلوي
+                  Qatar - Salwa Road
                </p>
             </div>
          </div>
          <div class="flex mt-4 space-x-6 justify-center sm:mt-0">
-            <a href="https://www.facebook.com/Insulator.qa" class="text-primary text-4xl drop-shadow">
+            <a href="https://www.facebook.com/Insulator.qa" class="text-secondary text-4xl drop-shadow">
                <i class="fab fa-facebook"></i>
             </a>
-            <a href="https://www.instagram.com/Insulator.qa" class="text-primary text-4xl drop-shadow">
+            <a href="https://www.instagram.com/Insulator.qa" class="text-secondary text-4xl drop-shadow">
                <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://www.snapchat.com/add/insulator.qa" class="text-primary text-4xl drop-shadow">
+            <a href="https://www.snapchat.com/add/insulator.qa" class="text-secondary text-4xl drop-shadow">
                <i class="fab fa-snapchat"></i>
             </a>
          </div>
       </div>
-      <div class="p-8 bg-zinc-900/75 mt-12">All Copy Rights Reserved to <span class="text-primary">Insulater©</span>
+      <div class="p-8 bg-zinc-900/75 mt-12">All Copy Rights Reserved to <span class="text-secondary">Insulater©</span>
          2022</div>
    </footer>
    <!-- END FOOTER -->
    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
    <!-- Swiper JS -->
    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
    <script>
+      AOS.init();
       // Initialize Swiper 
+      var swiperTwo = new Swiper(".mySwiper-two", {});
       var swiper = new Swiper(".mySwiper", {
          pagination: {
             el: ".swiper-pagination",
@@ -808,6 +1291,20 @@
             prevEl: ".swiper-button-prev",
          },
       });
+      var swiperThree = new Swiper(".mySwiper-three", {
+         navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+         },
+         // touchMoveStopPropagation: true,
+         // allowTouchMove: false,
+         // allowTouchMove
+         // noSwiping: true,
+         // onlyExternal: true,
+         noSwiping: true,
+         noSwipingClass: 'swiper-slide',
+      });
+      // swiperThree.allowTouchMove(false)
       let layoutOne = document.querySelector(".hero .layout-one")
       let layoutTwo = document.querySelector(".hero .layout-two")
       let layoutThree = document.querySelector(".hero .layout-three")
@@ -823,20 +1320,37 @@
          if (layoutOne.classList.contains("layout-active")) {
             layoutsAmimation();
             layoutTwo.classList.add("layout-active")
-         } else if(layoutTwo.classList.contains("layout-active")) {
+         } else if (layoutTwo.classList.contains("layout-active")) {
             layoutsAmimation();
             layoutThree.classList.add("layout-active")
-         } else if(layoutThree.classList.contains("layout-active")) {
+         } else if (layoutThree.classList.contains("layout-active")) {
             layoutsAmimation();
             layoutFour.classList.add("layout-active")
-         } else if(layoutFour.classList.contains("layout-active")) {
+         } else if (layoutFour.classList.contains("layout-active")) {
             layoutsAmimation();
             layoutFive.classList.add("layout-active")
-         } else if(layoutFive.classList.contains("layout-active")) {
+         } else if (layoutFive.classList.contains("layout-active")) {
             layoutsAmimation();
             layoutOne.classList.add("layout-active")
          }
       }, 5000);
+      let cars = document.querySelectorAll(".cars .car")
+      cars.forEach(car => {
+         car.addEventListener("click", (e) => {
+            if (car.classList.contains("carone")) {
+               console.log("car one");
+               swiperTwo.slideTo(0)
+            }
+            if (car.classList.contains("cartwo")) {
+               console.log("car two");
+               swiperTwo.slideTo(1)
+            }
+            if (car.classList.contains("carthree")) {
+               swiperTwo.slideTo(2)
+               console.log("car three");
+            }
+         })
+      })
    </script>
 </body>
 
