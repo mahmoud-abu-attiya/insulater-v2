@@ -90,3 +90,9 @@ h1, h2, h3, h4, h5, h6{
       transform: scale(1.2);
    }
 }
+.car img{
+   transition: 0.3s;
+}
+.car:hover > img{
+   transform: scale(1.1);
+}
