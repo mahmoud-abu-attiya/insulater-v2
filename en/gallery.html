@@ -1,53 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en">
 
 <head>
    <link rel="canonical" href="https://insulator.com" />
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>معرض الصور</title>
+   <title>Insulator - Gallery</title>
 
    <!-- Meta SEO -->
-   <meta name="title" content="معرض الصور">
-   <meta name="description"
-      content="ألقي نظرة على أعمالنا للتأكد من إختيارك للأفضل !">
+   <meta name="title" content="Insulator - Gallery">
+   <meta name="description" content="Take a look at our work to make sure you chose the best!">
    <meta name="robots" content="index, follow">
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <meta name="language" content="English">
    <meta name="author" content="Orizon Qatar">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
 
    <!-- Social media share -->
-   <meta property="og:title" content="معرض الصور">
+   <meta property="og:title" content="Insulator - Gallery">
    <meta property="og:site_name" content="Insulator">
    <meta property="og:url" content="https://insulator.com" />
-   <meta property="og:description"
-      content="ألقي نظرة على أعمالنا للتأكد من إختيارك للأفضل !">
+   <meta property="og:description" content="Take a look at our work to make sure you chose the best!">
    <meta property="og:type" content="website">
-   <meta property="og:image" content="https://i.postimg.cc/T3VK2VXK/insulater-ar.png">
-
+   <meta property="og:image" content="https://i.postimg.cc/zXv9xV6c/insulater.png">
    <!-- Favicon -->
    <link rel="apple-touch-icon" href="/icon1.png">
    <link rel="icon" type="image/png" href="/icon2.png">
    <meta name="theme-color" content="#ffffff">
-   <link href="../styles/main.css" rel="stylesheet">
 
+   <link href="../styles/main.css" rel="stylesheet">
    <script src="https://cdn.tailwindcss.com"></script>
    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <style>
-      *,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-         font-family: 'Tajawal', sans-serif;
+      .eapps-link {
+         display: none !important;
       }
    </style>
    <script>
@@ -69,11 +57,12 @@
 </head>
 
 <body>
-   <header dir="ltr" class="fixed top-0 left-0 w-full border-b border-gray-300 shadow bg-zinc-100 text-black" style="z-index: 999999;">
+   <header class="fixed top-0 left-0 w-full border-b border-gray-300 shadow bg-zinc-100 text-black" style="z-index: 999999;">
       <nav class="border-gray-200 px-2 sm:px-4 py-2.5 rounded">
          <div class="container flex flex-wrap justify-between items-center mx-auto">
             <a href="index.html" class="flex items-center">
                <img src="../images/ins1.png" class="h-10 sm:h-14" alt="Flowbite Logo">
+               <!-- <span class="self-center text-xl font-semibold whitespace-nowrap">Flowbite</span> -->
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
                class="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -87,42 +76,40 @@
                </svg>
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-               <ul dir="rtl"
-                  class="flex flex-col p-4 mt-4 rounded-lg border border-gray-200 md:flex-row md:gap-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+               <ul
+                  class="flex flex-col p-4 mt-4 rounded-lg border border-gray-200 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
                   <li>
                      <a href="index.html"
-                        class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
-                        الرئيسية
-                     </a>
+                        class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Home</a>
                   </li>
                   <li>
                      <a href="about.html" aria-current="page"
                         class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
-                        من نحن
+                        About
                      </a>
                   </li>
                   <li>
                      <a href="services.html"
                         class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
-                        الخدمات
+                        Services
                      </a>
                   </li>
                   <li>
                      <a href="gallery.html"
                         class="block py-2 pr-4 pl-3 text-white bg-primary rounded md:bg-transparent md:text-blue-700 md:p-0">
-                        المعرض
+                        Gallery
                      </a>
                   </li>
                   <li>
                      <a href="contact.html"
                         class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
-                        تواصل معنا
+                        Contact
                      </a>
                   </li>
                   <li>
                      <a href="../index.html"
                         class="block py-2 pr-4 pl-3 rounded hover:bg-primary/75 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
-                        English
+                        العربية
                      </a>
                   </li>
                </ul>
@@ -137,20 +124,20 @@
          <div data-aos="zoom-in"
             class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 z-10  text-white">
             <h1 class="mb-4 text-5xl font-extrabold md:text-6xl lg:text-8xl">
-               المعرض
+               Gallery
             </h1>
-            <ol class="inline-flex items-center gap-2">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
                <li class="inline-flex items-center">
                   <span class="inline-flex items-center text-sm font-medium">
-                     <i class="fas fa-home ml-2"></i>
-                     الرئيسية
+                     <i class="fas fa-home mr-2"></i>
+                     Home
                   </span>
                </li>
                <li>
                   <div class="flex items-center">
-                     <i class="fas fa-chevron-left"></i>
-                     <span class="mr-1 text-sm font-medium md:mr-2 text-secondary">
-                        المعرض
+                     <i class="fas fa-chevron-right"></i>
+                     <span class="ml-1 text-sm font-medium md:ml-2 text-secondary">
+                        Gallery
                      </span>
                   </div>
                </li>
@@ -163,7 +150,7 @@
          <div class="container text-center">
             <h2 data-aos="fade-up"
             class="mb-4 text-center mx-auto text-4xl font-extrabold tracking-tight leading-none md:text-6xl">
-            حسابنا على انستقرام
+            Our Instagram
          </h2>
             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
             <div class="elfsight-app-4ae952c4-367c-4954-9c4c-a6228c946b49"></div>
@@ -171,10 +158,10 @@
             <div class="">
                <h2 data-aos="fade-up"
                class="mb-4 text-center mx-auto text-4xl font-extrabold tracking-tight leading-none md:text-6xl">
-               معرض الصور
+               Our Gallery
             </h2>
             <p class="mb-6 font-light lg:mb-8 leading-7">
-               ألقي نظرة على أعمالنا للتأكد من إختيارك للأفضل !
+               Take a look at our work to make sure you chose the best!
             </p>
                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                <img src="../images/img3.jpg" alt="" class="object-cover">
@@ -195,36 +182,38 @@
          <div class="head text-center">
             <img src="../images/ins2.png" class="mx-auto sm:h-16" alt="Flowbite Logo">
             <h6 class="font-light text-white">
-              إنسيوليتر للحماية والعوازل
+               Insulator For Insulation & Protection
             </h6>
          </div>
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
                <i class="fas fa-user-clock text-center text-secondary text-5xl drop-shadow-md"></i>
-               <h5 class="text-xl font-bold">ساعات العمل</h5>
-               <p class="font-light text-white">
-                  <span class="text-secondary"> السبت الي الخميس:</span> <br> 9 صباحا – 1 مساء <br> 4 مساء – 9 مساء
-                  <br>
-                  <!-- <span class="text-secondary">الجمعه:</span> 4 مساء – 9 مساء -->
+               <h5 class="text-xl font-bold">Work hours</h5>
+               <p class="font-light text-white text-center">
+                  <span class="text-secondary">Sa-Th:</span> <br>
+                  9 A.M - 1 P.M <br>
+                  4 P.M - 9 P.M
                </p>
             </div>
             <div>
                <i class="fas fa-envelope text-center text-secondary text-5xl drop-shadow-md"></i>
-               <h5 class="text-xl font-bold">البريد الالكتروني:</h5>
+               <h5 class="text-xl font-bold">E-mail:</h5>
                <a href="mailto:info@insulator-qatar.com" class="font-light text-white underline">
                   info@insulator-qatar.com
                </a>
             </div>
             <div>
                <i class="fas fa-map-marker-alt text-center text-secondary text-5xl drop-shadow-md"></i>
-               <h5 class="text-xl font-bold">العنوان</h5>
+               <h5 class="text-xl font-bold">Location</h5>
                <p class="font-light text-white">
-                  قطر - طريق سلوى
+                  Salwa Road, Qatar
                </p>
             </div>
             <div>
                <i class="fas fa-phone-alt text-center text-secondary text-5xl drop-shadow-md"></i>
-               <h5 class="text-xl font-bold">أرقام التواصل</h5>
+               <h5 class="text-xl font-bold">
+                  Contact Numbers
+               </h5>
                <p class="font-light text-white">
                   <a href="tel:60005829" class="underline">60005829</a> <br>
                   <a href="tel:60007453" class="underline">60007453</a> <br>
@@ -232,7 +221,7 @@
                </p>
             </div>
          </div>
-         <div dir="ltr" class="flex mt-4 space-x-6 justify-center sm:mt-0">
+         <div class="flex mt-4 space-x-6 justify-center sm:mt-0">
             <a href="https://www.facebook.com/Insulator.qa" class="text-secondary text-4xl drop-shadow">
                <i class="fab fa-facebook"></i>
             </a>
@@ -244,9 +233,9 @@
             </a>
          </div>
       </div>
-      <div class="p-8 bg-zinc-900/75 mt-12">جميع الحقوق محفوظة لشركة <span class="text-secondary font-bold">Insulator©</span>
-         ٢٠٢٢
-         <p> تطوير وتنفيذ <a href="https://orizon.qa" class="hover:underline font-bold text-secondary">Orizon Qatar</a></p>
+      <div class="p-8 bg-zinc-900/75 mt-12">All Copy Rights Reserved to <span class="text-secondary font-bold">Insulator©</span>
+         2022
+         <p>Designed and Developed By <a href="https://orizon.qa" class="font-bold hover:underline text-secondary">Orizon Qatar</a></p>
       </div>
    </footer>
    <!-- END FOOTER -->
