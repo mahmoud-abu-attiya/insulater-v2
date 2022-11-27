@@ -1,1 +1,4 @@
 ErrorDocument 404 /not-found-page.html
+ErrorDocument 401 /not-found-page.html
+ErrorDocument 403 /not-found-page.html
+ErrorDocument 500 /not-found-page.html
